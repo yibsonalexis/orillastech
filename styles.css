@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: "fjalla one";
+    margin: 0;
+    padding: 0;
+}
+.present{
+    background-color: #5f32ffd8;
+    color: #fff;
+    padding: 50px 20px;
+}
+.present .text-content{
+    max-width: 1100px;
+    margin: auto;
+}
+.present h2{
+    font-size: 48px;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.present .text-content p{
+    font-size:20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.present .text-content p strong{
+    color: #000000;
+    font-weight: 900;
+    font-family:"freeman" ;
+}
+.gallery{
+    /* background-color: #5f32ffd8; */
+    background: linear-gradient(to top, #7d2b9e49, #3e1a5352), url(img/fondo.jpeg);
+    color: #fff;
+    padding: 50px 20px;
+}
+.gallery .gallery-content{
+    max-width: 1100px;
+    margin: auto;
+}
+.gallery .photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery .photos .photo{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 13px;
+    cursor: pointer;
+}
+.gallery .photos .photo img{
+    width: 350px;
+    height: 400px;
+    display: block;
+    border-radius: 25px;
+}
+.gallery .photos .video video{
+    width: 1050px;
+    height: 600px;
+    display: block;
+    border-radius: 25px;
+}
+.gallery .photos .photo .overlay{
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(#de3bffb4,#9c1cb6bd);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.gallery .photos .photo .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+    font-size: 35px;
+}
+.gallery .photos .photo .overlay:hover{
+    opacity: 1;
+}
+.gallery .photos.photo .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: #282729;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .foot{
+    margin-bottom: 20px;
+}
+footer .foot .info{
+    color: #fff;
+    display: inline-block;
+
+}
+footer .foot .info img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+footer .foot .info h4{
+    font-size: 20px;
+    font-family: "freeman";
+    margin-bottom: 7.5px;
+}
+footer .foot .info p{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+footer .foot .text-center a ion-icon{
+    color: #fff;
+    margin: 8px;
+    font-size: 40px;
+}
+footer .foot .text-center p{
+    font-size: 18px;
+    margin-bottom: 7.5px;
+}
+footer .foot .orillas{
+    font-size: 18px;
+    margin-top: 38px;
+}
