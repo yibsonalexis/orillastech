@@ -1,3 +1,4 @@
+<<<<<<< feature/impact-gallery-4
 # 🌍 Orillas Tech - Página Web de la Fundación
 
 Bienvenido al repositorio oficial de **Orillas Tech**, una fundación creada para enseñar programación a jóvenes en comunidades con acceso limitado a internet, energía y educación tecnológica. Esta web será el espacio donde compartiremos nuestra misión, historias de impacto y formas en las que otros pueden unirse a nuestra causa.
@@ -85,3 +86,6 @@ git push origin feature/contact-form
 - Usa `git status` para ver los cambios antes de hacer commit.
 - Asegúrate de que tu código esté limpio y funcione antes de subirlo.
 - Siempre prueba en dispositivos móviles también.
+=======
+https://github.com/yibsonalexis/orillastech.git
+>>>>>>> main
