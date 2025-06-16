@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    margin-right: 12px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "segoe ui", sans-serif;
+}
+
+.tech-color {
+    color:#000000
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "segoe UI", sans-serif;
+
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.hero-text {
+    z-index: 1;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 700px; /* Aumenta este valor si la quieres más grande */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    border-radius: 12px; /* Opcional: bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Opcional: sombra elegante */
+}
+
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+    display: block;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.burger {
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+}
+}
+
+.intro {
+    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+    background-size: 400% 400%;
+    animation: introGradient 20s ease infinite;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+@keyframes introGradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.video-section {
+    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+
+
+}
+
+@keyframes introGradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
