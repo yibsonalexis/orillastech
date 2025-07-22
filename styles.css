@@ -1,195 +1,192 @@
-<<<<<<< HEAD
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Segoe UI', sans-serif;
-    color: rgb(255, 255, 255);
-    height: 100%;
-    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+body,
+html {
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
 @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .logo {
-    height: 45px;
-    width: auto;
-    margin-right: 12px;
+  height: 45px;
+  width: auto;
+  margin-right: 12px;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    background-color: #ffffff;
-    height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #ffffff;
+  height: 70px;
 }
 
 .branding {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .brand-name {
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "segoe ui", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "segoe ui", sans-serif;
 }
 
 .tech-color {
-    color:#000000
+  color: #000000;
 }
 
 .nav-links {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "segoe UI", sans-serif;
-
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "segoe UI", sans-serif;
 }
 
 .nav-links a:hover {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
-    font-size: 26px;
-    background: none;
-    color: white;
-    border: none;
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+  background: none;
+  color: white;
+  border: none;
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-
-
 .hero-text {
-    z-index: 1;
-    max-width: 80%;
-    padding: 20px;
+  z-index: 1;
+  max-width: 80%;
+  padding: 20px;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    letter-spacing: 2px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
 
 .intro {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .intro-content {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .intro-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .intro-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .intro-image {
-    max-width: 100px;
-    height: auto;
-    border-radius: 12px;
+  max-width: 100px;
+  height: auto;
+  border-radius: 12px;
 }
 
 .intro-image {
-    width: 100%;
-    max-width: 700px; /* Aumenta este valor si la quieres más grande */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centra la imagen horizontalmente */
-    border-radius: 12px; /* Opcional: bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Opcional: sombra elegante */
+  width: 100%;
+  max-width: 700px; /* Aumenta este valor si la quieres más grande */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Centra la imagen horizontalmente */
+  border-radius: 12px; /* Opcional: bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Opcional: sombra elegante */
 }
 
 .video-section {
-    padding: 60px 20px;
-    text-align: center;
-    color: white;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
 }
 
 .video-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .video-container {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .video-container video {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
 }
 
 @media (max-width: 768px) {
-.nav-links {
+  .nav-links {
     display: none;
     flex-direction: column;
     background-color: #111;
@@ -198,145 +195,192 @@ body, html {
     right: 0;
     width: 50%;
     padding: 10px;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
 
-.menu-toggle {
-    display: none;
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
     font-size: 24px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-}
+  }
 
-@media (max-width: 768px) {
-    .menu-toggle {
+  .burger {
     display: block;
-}
+  }
 
-.nav-links.active {
-    display: flex;
-}
-
-.nav-links {
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-links {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.burger {
-    display: block;
-}
-
-.hero-text h1 {
+  .hero-text h1 {
     font-size: 2rem;
-}
+  }
 
-.hero-text p {
+  .hero-text p {
     font-size: 1rem;
-}
-
-}
+  }
 }
 
 .intro {
-    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
-    background-size: 400% 400%;
-    animation: introGradient 20s ease infinite;
-    padding: 60px 20px;
-    text-align: center;
+  background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+  background-size: 400% 400%;
+  animation: introGradient 20s ease infinite;
+  padding: 60px 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 100px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #4c16af;
+  border-radius: 7px;
+}
+
+button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#confirmacion {
+  margin-top: 15px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+.redes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #25d366;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #282729;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
 }
 
 @keyframes introGradient {
-    0% {
-        background-position: 50% 0%;
-    }
-    50% {
-        background-position: 50% 100%;
-    }
-    100% {
-        background-position: 50% 0%;
-    }
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .video-section {
-    background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-
-
+  background: linear-gradient(-45deg, #1e1eaa, #8f00ff, #ff0080, #00cfff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
 @keyframes introGradient {
-    0% {
-        background-position: 50% 0%;
-    }
-    50% {
-        background-position: 50% 100%;
-    }
-    100% {
-        background-position: 50% 0%;
-    }
-=======
-body {
-    background: #5f32ffd8;
-    padding: 10px;
-    margin: 10px;
-    text-align:center;
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
-
 
 h1 {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    font-size:30;
-    margin: 0;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  margin: 0;
 }
 span {
-    color: #070101;
+  color: #070101;
 }
 p {
-    
-    text-align:initial;
-    color: white;
-    padding: 5px;
-    font-size: 18px;
+  text-align: initial;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
 }
 h2 {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    font-size: 25px;
-    margin: 0;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0;
 }
 h3 {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
 }
 h4 {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
 }
 li {
-    font-size: 18px;
-    text-align: initial;
-    color: white;
-    padding: 5px;
-
+  font-size: 18px;
+  text-align: initial;
+  color: white;
+  padding: 5px;
 }
 img {
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    border: 7px groove black;
-    border-radius: 10px;
->>>>>>> 99e0614 (Add initial content for Orillas Tech website, including a new README.md and an introduction section in index.html.)
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border: 7px groove black;
+  border-radius: 10px;
 }
