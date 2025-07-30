@@ -1,3 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "fjalla one";
+  margin: 0;
+  padding: 0;
+}
+.present {
+  background-color: #5f32ffd8;
+  color: #fff;
+  padding: 50px 20px;
+}
+.present .text-content {
+  max-width: 1100px;
+  margin: auto;
+}
+.present h2 {
+  font-size: 48px;
+  font-family: "monospace";
+  text-align: center;
+  padding: 20px 0;
+}
+.present .text-content p {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.present .text-content p strong {
+  color: #000000;
+  font-weight: 900;
+  font-family: "freeman";
+}
+.gallery {
+  background: linear-gradient(to top, #bd44ec48, #bd44ec48), url(img/fondo.jpeg);
+  color: #fff;
+  padding: 50px 20px;
+}
+.gallery .gallery-content {
+  max-width: 1100px;
+  margin: auto;
+}
+.gallery .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery .photos .photo {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 13px;
+  cursor: pointer;
+}
+.gallery .photos .photo img {
+  width: 350px;
+  height: 400px;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 7.5px #000000aa;
+}
+.gallery .photos .video video {
+  width: 1050px;
+  height: 600px;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 7.5px #000000aa;
+}
+.gallery .photos .photo .overlay {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(#de3bffb4, #9c1cb6bd);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.gallery .photos .photo .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  font-size: 35px;
+}
+.gallery .photos .photo .overlay:hover {
+  opacity: 1;
+}
+.gallery .photos.photo .overlay:hover h3 {
+  margin-bottom: 0px;
+}
+
+#testimonies {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#testimonies h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-family: "monospace";
+  color: #2c3e50;
+}
+
+.testimony {
+  background-color: #ffffff;
+  border-left: 5px solid #00aaff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.testimony:hover {
+  transform: translateY(-5px);
+}
+
+.testimony h3 {
+  margin-top: 0;
+  color: #0077b6;
+  font-size: 1.4em;
+}
+
+.testimony p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #testimonios {
+    padding: 30px 15px;
+  }
+
+  #testimonios h2 {
+    font-size: 2em;
+  }
+
+  .testimonio {
+    padding: 20px;
+  }
+
+  .testimonio h3 {
+    font-size: 1.2em;
+  }
+
+  .testimonio p {
+    font-size: 1em;
+  }
+
+  .boton-compartir {
+    padding: 8px 14px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  #testimonios h2 {
+    font-size: 1.7em;
+  }
+
+  .testimonio {
+    padding: 15px;
+  }
+
+  .testimonio h3 {
+    font-size: 1.1em;
+  }
+
+  .testimonio p {
+    font-size: 0.95em;
+  }
+
+  .boton-compartir {
+    padding: 7px 12px;
+    font-size: 0.85em;
+  }
+}
+footer {
+  background-color: #282729;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .foot {
+  margin-bottom: 20px;
+}
+footer .foot .info {
+  color: #fff;
+  display: inline-block;
+}
+footer .foot .info img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+footer .foot .info h4 {
+  font-size: 20px;
+  font-family: "freeman";
+  margin-bottom: 7.5px;
+}
+footer .foot .info p {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+footer .foot .text-center a ion-icon {
+  color: #fff;
+  margin: 8px;
+  font-size: 40px;
+}
+footer .foot .text-center p {
+  font-size: 18px;
+  margin-bottom: 7.5px;
+}
+footer .foot .orillas {
+  font-size: 18px;
+  margin-top: 38px;
+}
 * {
   margin: 0;
   padding: 0;
